@@ -48,16 +48,16 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/requirementsprocess.png?raw=true"  width="500" height="400">
 
 ## 需求引出和分析
-**初始方法：** <br>
-**Stakeholder Analysis:**
+**初始方法** <br>
+**Stakeholder Analysis**
 - **目的：** 确认所有会用该系统的人。
 - 主要、次要、第三方利益相关者。
 
-**Personas:**
+**Personas**
 - 代表真实的利益相关者类型，但是不是真人的报告。制作两三个 **key user type**。
 - **目标：** 清楚的区分所有的利益相关者。
 
-**Use case diagrams:**
+**Use case diagrams**
 - 详细的说明每个利益相关者要完成的任务，用actors和case。
 
 **User stories**
@@ -89,7 +89,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - 看到别人没说到的东西因为人们很少了解到整个情况。
 
 **Technology Tours**
-- **目标：**发现了解任务中的所有技术。
+- **目标：** 发现了解任务中的所有技术。
 - 帮助你确定软件将使用哪些功能。
 
 **Ethnography**
