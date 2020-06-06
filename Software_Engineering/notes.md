@@ -89,7 +89,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - 看到别人没说到的东西因为人们很少了解到整个情况。
 
 **Technology Tours**
-- **目标** 发现了解任务中的所有技术。
+- **目标：**发现了解任务中的所有技术。
 - 帮助你确定软件将使用哪些功能。
 
 **Ethnography**
@@ -104,7 +104,11 @@ The application of a systematic, disciplined, quantifiable approach to the devel
   - 你要展示给你的老板和同事（internal validation），采取“Requirements Review”的方式，与你的团队合作，将需求、计划、预算等介绍给你的经理。
   - 如果遇到问题，就不能进行外部验证，如果是缺少的部分就要进行更多的elicitation，如果是冲突，记录下来问题与客户沟通。
   - 必须和用户达成一致（external validation），其实就是和用户做“Requirements Review”。
-<br>
 4. Specification也可以进行需求验证。
 
-**需求规格文档：** <br> 1. 把用户的需求翻译成正式的文档， **“做什么”** 而不是“怎样实现”。2. 通常是一大组嵌套的列表，具有唯一的ID。3. 生成的图表与之匹配。4. 清单被分类（重要性、风险）。5. 项目结束时定义验收测试。
+**需求规格文档：**
+- 把用户的需求翻译成正式的文档， **“做什么”** 而不是“怎样实现”。
+- 通常是一大组嵌套的列表，具有唯一的ID。
+- 生成的图表与之匹配。
+- 清单被分类（重要性、风险）。
+- 项目结束时定义验收测试。
