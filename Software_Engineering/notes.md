@@ -9,5 +9,15 @@
 |Lecture 05|Requirements-Validation|
 
 
-<h2>Introduction</h2>
+# Introduction #
 <span id="lec1"></span>
+## Definition of Software
+Software is something that is working, usually for ‘real humans’ to use to help them do something.
+Software includes: The compiled code, documentation, configuration components, installation/upgrade.
+
+## Definition of Software Engineering
+The application of a systematic, disciplined, quantifiable approach to the development, operationand maintenance of software.
+That is, the application of engineering to software.
+
+## SE Process
+![SEprocess](https://github.com/lakerschampions/Learning-Notes/blob/master/images/seprocess.png?raw=true)
