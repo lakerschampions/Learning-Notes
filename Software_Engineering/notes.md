@@ -42,15 +42,30 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 # 用户需求 
 <span id="lec2"></span>
-<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/requirementsprocess.png?raw=true"  width="500" height="400">
 
 ## 需求工程
-### 需求引出
+
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/requirementsprocess.png?raw=true"  width="500" height="400">
+
+## 需求引出和分析
 **初始方法：** <br>
-**Stakeholder Analysis:**<br>
-**Personas:**<br>
-**use case diagrams:**<br>
-**user stories**<br>
+**Stakeholder Analysis:**
+- **目的：** 确认所有会用该系统的人。
+- 主要、次要、第三方利益相关者。
+
+**Personas:**
+- 代表真实的利益相关者类型，但是不是真人的报告。制作两三个 **key user type**。
+- **目标：** 清楚的区分所有的利益相关者。
+
+**Use case diagrams:**
+- 详细的说明每个利益相关者要完成的任务，用actors和case。
+
+**User stories**
+- 将actors和case放在一起并且加上原因。
+- “As a <role>, I want <goal/desire> so that <outcome>” (a role, a goal and an effect/outcome/motivation)
+- 在敏捷开发中经常被使用。
+- 简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。
+- 在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。
 
 # 需求获取
 ## 需求的分类：功能性vs非功能性
@@ -58,20 +73,38 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 **非功能性需求：** 必须遵照的标准，约束条件，质量属性。
 
 ## 获取需求的方式
-**Surveys:**<br>
-**Interviews & Focus Group:**<br>
-**Observations:**<br>
-**Technology Tours:**<br>
-**Ethnography:**<br>
+**Surveys**
+- 有助于获得大多数人的意见但是不利于理解细节。
+- 常见的错误：发送错误的问卷，被精心设计来获得偏向性的答案。
+- 第二常见的错误：reinvent the wheel。
+- 其他问题：2 parts questions, leading questions, surveys are too long。
+
+**Interviews & Focus Group**
+- 允许自由的提问，面试管思想开放鼓励交流。
+- 往往不只是在talk，还会展示一些图表让你展开讨论。
+- 常见错误：没有计划和todo list。
+- 可以讨论不同的观点，更快地覆盖用户，但是可能产生矛盾，诞生主导发言者或者讨论时间太长。
+
+**Observations**
+- 看到别人没说到的东西因为人们很少了解到整个情况。
+
+**Technology Tours**
+- **目标** 发现了解任务中的所有技术。
+- 帮助你确定软件将使用哪些功能。
+
+**Ethnography**
+
 
 # 需求验证
+<span id="lec5"></span>
 **目的：** <br> 
-1.Checking that you are right：确认系统是不是用户真正想要的。<br> 
-2.Avoiding reworking：避免再次修改带来的巨大成本。<br> 
-3.Contractually Agreeing：在项目的某一个阶段，你需要决定到底真正想做什么，你需要让所有人同意你造的东西。
-  - 你要展示给你的老板和同事（Internal），采取“Requirements Review”的方式，与你的团队合作，将需求、计划、预算等介绍给你的经理。
+1. Checking that you are right：确认系统是不是用户真正想要的。<br> 
+2. Avoiding reworking：避免再次修改带来的巨大成本。<br> 
+3. Contractually Agreeing：在项目的某一个阶段，你需要决定到底真正想做什么，你需要让所有人同意你造的东西。
+  - 你要展示给你的老板和同事（internal validation），采取“Requirements Review”的方式，与你的团队合作，将需求、计划、预算等介绍给你的经理。
   - 如果遇到问题，就不能进行外部验证，如果是缺少的部分就要进行更多的elicitation，如果是冲突，记录下来问题与客户沟通。
-  - 必须和用户达成一致（external），其实就是和用户做“Requirements Review”。
+  - 必须和用户达成一致（external validation），其实就是和用户做“Requirements Review”。
 <br>
+4. Specification也可以进行需求验证。
 
-**需求规格文档：** <br> 1.把用户的需求翻译成正式的文档， **“做什么”** 而不是“怎样实现”。2.通常是一大组嵌套的列表，具有唯一的ID。3.生成的图表与之匹配。4.清单被分类（重要性、风险）。5.项目结束时定义验收测试。
+**需求规格文档：** <br> 1. 把用户的需求翻译成正式的文档， **“做什么”** 而不是“怎样实现”。2. 通常是一大组嵌套的列表，具有唯一的ID。3. 生成的图表与之匹配。4. 清单被分类（重要性、风险）。5. 项目结束时定义验收测试。
