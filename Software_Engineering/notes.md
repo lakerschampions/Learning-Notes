@@ -3,7 +3,7 @@
 |Titles|
 |-----|
 |[Specification](#spec)|
-[Specification](#spec)
+
 # Software
 Software is something that is working, usualy for ‘real humans’ to use to help them do something
 
@@ -11,7 +11,7 @@ Software is something that is working, usualy for ‘real humans’ to use to he
 ![SE_process](https://raw.githubusercontent.com/lakerschampions/Learning-Notes/master/images/seprocess.png?token=AJS34WQCZNBFBN2PAPIBLW263OJHY)
 
 ## Specification
-<span id = "#spec"></span>
+<span id = "spec"></span>
 ### Requirements
 
 #### Requirements Engineering
