@@ -100,15 +100,19 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 <br><br>
 # 需求模型
 <span id="lec4"></span>
-**模型的作用：** 1. 导出需求。2. 在设计过程中描述系统工程师实现的东西。3. 在实现后记录系统结构和操作。
+**模型的作用：（不止在需求分析中）** 1. 导出需求。2. 在设计过程中描述系统工程师实现的东西。3. 在实现后记录系统结构和操作。
 
 |模型名称|介绍|
 |:-------:|:----:|
-|上下文模型（context diagram）| 在收集需求的时候，确定了许多需要交互的系统，你想知道这些系统是如何关联的（大部分是用于非功能性需求）。定义了系统的边界，代表了需要开发的关键系统和其他系统、组件的关系，并且还有不开发的系统。|
-|任务分析（Task Analysis）|用于标识子任务，不利于过程，没有decision points，没有actors|
+|上下文模型| 在收集需求的时候，确定了许多需要交互的系统，你想知道这些系统是如何关联的（大部分是用于非功能性需求）。定义了系统的边界，代表了需要开发的关键系统和其他系统、组件的关系，并且还有不开发的系统。|
+|任务分析|用于标识子任务，不利于过程，没有decision points，没有actors|
+|Scenarios|Must define a setting or contex;Must define one or more actors or users;Must define goals or objectives;MUST describe a plot,the plot describes how a user,in a context,achieves a goal|
 |UML Diagram|BELOW⬇️⬇️⬇️|
-|活动图（Activity Diagram）|黑球代表开始，黑心球代表结束，bar代表并行，diamond代表决策，用于详细说明关键活动的工作流（尤其是涉及决策的时候），通常是为了详细定义一个usecase。|
-|顺序图（Sequence Diagram）|有利于人与系统之间复杂信息的共享，可被视为关键部分之间的一系列信息。|
+|活动图|黑球代表开始，黑心球代表结束，bar代表并行，diamond代表决策，用于详细说明关键活动的工作流（尤其是涉及决策的时候），通常是为了详细定义一个usecase。|
+|顺序图|有利于人与系统之间复杂信息的共享，可被视为关键部分之间的一系列信息。|
+|类图|在面向对象的代码中制定类|
+|状态图|表示某物可能存在的状态|
+
 
 
 <br><br>
