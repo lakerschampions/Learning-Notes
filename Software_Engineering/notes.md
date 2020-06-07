@@ -7,6 +7,7 @@
 |Lecture 03|[需求收集](#lec3)|
 |Lecture 04|[需求建模](#lec4)|
 |Lecture 05|[需求验证](#lec5)|
+|Lecture 07|[规范](#lec7)|
 
 <br><br>
 
@@ -112,3 +113,24 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - 生成的图表与之匹配。
 - 清单被分类（重要性、风险）。
 - 项目结束时定义验收测试。
+
+<br><br>
+
+# 规范
+<span id="lec7"></span>
+
+## Specifications (vs Requirements)
+
+|类型| 功能| 对象|定义|
+|:---:|:----:|:----:|:---:|
+|**Requirement(Users):** |What a stakeholder needs to be able to do.|Client managers,System end-users,Client engineers,Contractor managers,System architects|系统所要实现的功能和性能，系统的运行环境和发展前景。是项目的基础，定义了所需要的质量水平便于决策，为之后的测试打下基础|
+|**Specification(System):** |What the software must do to meet the requirement above.|System end-users,Client engineers,System architects,Software developers|对系统的功能、服务、约束更加细节地描述，将要实现什么。系统将如何满足用户的需求，通常以表格形式列出。|
+
+**需求与规范的区别：** 需求是指从业务用户的角度来看业务需求，而规范是从系统的角度定义需求；需求表示问题或需要而规范提供了问题的解决方案；需求是从企业用户/利益相关者收集，而规范则是由技术团队提供的他们心里的需求。；需求的输入是业务用户，而规范的输入是需求文档、业务用户和技术团队。
+
+## 几种规范的格式
+
+|名称|介绍|
+|:----:|:---:|
+|Natural Language||
+
