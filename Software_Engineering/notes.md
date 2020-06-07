@@ -151,7 +151,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 # 原型
 <span id="lec8"></span>
-**定义：** 一种设想所有规格协同工作的方法，测试规范的一致性，是系统具体但部分的实现。
+**定义：** 一种设想所有规格协同工作的方法，测试规范的一致性，是系统具体但 **部分** 的实现。
 
 |Low Fidelity|High Fidelity|
 |:---:|:---:|
@@ -159,7 +159,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 |潜在的想法|与最终产品相似|
 |关键的功能|准确的细节|
 
-**目的：** 1. 技术的作用 2. 看和感觉 3. 实施指南
+**目的：** 1. 技术的作用 2. 看和感觉 3. 实施指南<br>
 **风险：** 
 - 在high fidelity上投入过多时间和花费。
 - Adhoc的代码被用在了实际系统里。
