@@ -51,23 +51,12 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 ## 需求引出和分析
 
 |初始方法|介绍|
+|:---:|:----:|
 |**Stakeholder Analysis**| **目的：** 确认所有会用该系统的人。主要、次要、第三方利益相关者。|
 |**Personas**|代表真实的利益相关者类型，但是不是真人的报告。制作两三个 **key user type**。 **目标：** 清楚的区分所有的利益相关者。|
-| **Use case diagrams** |详细的说明每个利益相关者要完成的任务，用actors和case。|
--
+|**Use case diagrams** |详细的说明每个利益相关者要完成的任务，用actors和case。|
+|**User stories**| 将actors和case放在一起并且加上原因。“As a **role**, I want **goal/desire** so that **outcome**” (a role, a goal and an effect/outcome/motivation)。在敏捷开发中经常被使用，简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。|
 
-
-- 
-
-
-- 
-
-**User stories**
-- 将actors和case放在一起并且加上原因。
-- “As a **role**, I want **goal/desire** so that **outcome**” (a role, a goal and an effect/outcome/motivation)
-- 在敏捷开发中经常被使用。
-- 简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。
-- 在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。
 <br><br>
 
 # 需求收集
