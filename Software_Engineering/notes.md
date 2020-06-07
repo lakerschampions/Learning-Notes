@@ -8,6 +8,7 @@
 |Lecture 04|[需求建模](#lec4)|
 |Lecture 05|[需求验证](#lec5)|
 |Lecture 07|[规范](#lec7)|
+|Lecture 08|[原型](#lec8)|
 
 <br><br>
 
@@ -147,3 +148,20 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - **Completeness checks:** 包括所有用户想要的需求和约束。
 - **Realism checks:** 是否能被现有技术实现。
 - **Verifability checks:** 是否能被测试。
+
+# 原型
+<span id="lec8"></span>
+**定义：** 一种设想所有规格协同工作的方法，测试规范的一致性，是系统具体但部分的实现。
+
+|Low Fidelity|High Fidelity|
+|:---:|:---:|
+|草图、纸模型|自动化软件|
+|潜在的想法|与最终产品相似|
+|关键的功能|准确的细节|
+
+**目的：** 1. 技术的作用 2. 看和感觉 3. 实施指南
+**风险：** 
+- 在high fidelity上投入过多时间和花费。
+- Adhoc的代码被用在了实际系统里。
+- 原型替代了文档的作用。
+- 被错误的stakeholder批准。
