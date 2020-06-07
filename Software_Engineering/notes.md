@@ -50,12 +50,12 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 ## 需求引出和分析
 
-|初始方法|介绍|
+|初始方法|介绍|优缺点|
 |:---:|:----:|
 |**Stakeholder Analysis**| **目的：** 确认所有会用该系统的人。主要、次要、第三方利益相关者。|
 |**Personas**|代表真实的利益相关者类型，但是不是真人的报告。制作两三个 **key user type**。 **目标：** 清楚的区分所有的利益相关者。|
-|**Use case diagrams** |详细的说明每个利益相关者要完成的任务，用actors和case。|
-|**User stories**| 将actors和case放在一起并且加上原因。“As a **role**, I want **goal/desire** so that **outcome**” (a role, a goal and an effect/outcome/motivation)。在敏捷开发中经常被使用，简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。|
+|**Use case diagrams** |详细的说明每个利益相关者要完成的任务，用actors和case。||
+|**User stories**| 将actors和case放在一起并且加上原因。“As a **role**, I want **goal/desire** so that **outcome**” (a role, a goal and an effect/outcome/motivation)。在敏捷开发中经常被使用。|简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。|
 
 <br><br>
 
@@ -67,9 +67,9 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 ## 获取需求的方式
 
-|方式|作用|缺点|
+|方式|介绍|优缺点|
 |:--:|:-----:|:------:|
-|**Surveys**|有助于获得大多数人的意见但是不利于理解细节。|常见的错误：发送错误的问卷，被精心设计来获得偏向性的答案。第二常见的错误：reinvent the wheel。其他问题：2 parts questions, leading questions, surveys are too long。|
+|**Surveys**||有助于获得大多数人的意见但是不利于理解细节。常见的错误：发送错误的问卷，被精心设计来获得偏向性的答案。第二常见的错误：reinvent the wheel。其他问题：2 parts questions, leading questions, surveys are too long。|
 |**Interviews & Focus Group**|允许自由的提问，面试管思想开放鼓励交流。往往不只是在talk，还会展示一些图表让你展开讨论。|常见错误：没有计划和todo list。可以讨论不同的观点，更快地覆盖用户，但是可能产生矛盾，诞生主导发言者或者讨论时间太长。|
 |**Observations**|看到别人没说到的东西因为人们很少了解到整个情况。||
 |**Technology Tours**|发现了解任务中的所有技术。帮助你确定软件将使用哪些功能。||
