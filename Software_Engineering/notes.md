@@ -86,8 +86,8 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 |:-------:|:----:|
 |上下文模型| 在收集需求的时候，确定了许多需要交互的系统，你想知道这些系统是如何关联的（大部分是用于非功能性需求）。定义了系统的边界，代表了需要开发的关键系统和其他系统、组件的关系，并且还有不开发的系统。|
 |任务分析|用于标识子任务，不利于过程，没有decision points，没有actors|
-|Scenarios|Must define a setting or context<br>Must define one or more actors or users<br>Must define goals or objectives<br>MUST describe a plot,the plot describes how a user,in a context,achieves a goal|
-|UML图|BELOW⬇️⬇️⬇️|
+|Scenarios|**MUST** define a setting or context<br> **MUST** define one or more actors or users<br> **MUST** define goals or objectives<br> **MUST** describe a plot,the plot describes how a user,in a context,achieves a goal|
+|**UML图**|**BELOW⬇️⬇️⬇️**|
 |活动图|黑球代表开始，黑心球代表结束，bar代表并行，diamond代表决策，用于详细说明关键活动的工作流（尤其是涉及决策的时候），通常是为了详细定义一个use case。|
 |顺序图|有利于人与系统之间复杂信息的共享，可被视为关键部分之间的一系列信息。|
 |类图|在面向对象的代码中制定类|
@@ -123,16 +123,20 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 |类型| 功能| 对象|定义|
 |:---:|:----:|:----:|:---:|
-|**需求(用户):** |What a stakeholder needs to be able to do.|Client managers,System end-users,Client engineers,Contractor managers,System architects|系统所要实现的功能和性能，系统的运行环境和发展前景。是项目的基础，定义了所需要的质量水平便于决策，为之后的测试打下基础|
-|**规范(系统):** |What the software must do to meet the requirement above.|System end-users,Client engineers,System architects,Software developers|对系统的功能、服务、约束更加细节地描述，将要实现什么。系统将如何满足用户的需求，通常以表格形式列出。|
+|**需求(用户):** |What a stakeholder needs to be able to do.|Client managers,System end-users,Client engineers,Contractor managers,System architects|系统所要实现的**功能和性能**，系统的运行环境和发展前景。是项目的基础，定义了所需要的质量水平便于决策，为之后的测试打下基础|
+|**规范(系统):** |What the software must do to meet the requirement above.|System end-users,Client engineers,System architects,Software developers|对系统的功能、服务、约束更加细节地描述，将要实现什么。系统将**如何满足**用户的需求，通常以表格形式列出。|
 
-**需求与规范的区别：** 需求是指从业务用户的角度来看业务需求，而规范是从系统的角度定义需求；需求表示问题或需要而规范提供了问题的解决方案；需求是从企业用户/利益相关者收集，而规范则是由技术团队提供的他们心里的需求。；需求的输入是业务用户，而规范的输入是需求文档、业务用户和技术团队。
+**需求与规范的区别：** 需求是指从**业务用户**的角度来看业务需求，而规范是从**系统**的角度定义需求；需求表示问题或需要而规范提供了问题的解决方案；需求是从企业用户/利益相关者收集，而规范则是由技术团队提供的他们心里的需求。；需求的输入是业务用户，而规范的输入是需求文档、业务用户和技术团队。
 
 ## 几种规范的格式
 
 |名称|介绍|
 |:----:|:---:|
-|Natural Language|可以通俗直观也可以模棱两可。<br> **标准格式：** 用一句话链接到用户的序曲，区分强制的（shall）和可取的（should），强调重要元素，避免使用行话，确保**measurable** 。|
-|Structured|将规范制成表格或者放在模版里。可以指定附加条件。|
-| Graphical|UML图、原型。当发现规范很复杂，可以将他们可视化。|
-|Mathematical|没有详细介绍 T^T|
+|**Natural Language**|可以通俗直观也可以模棱两可。<br> **标准格式：** 用一句话链接到用户的序曲，区分强制的（shall）和可取的（should），强调重要元素，避免使用行话，确保**measurable** 。|
+|**Structured**|将规范制成表格或者放在模版里。可以指定附加条件。|
+|**Graphical**|UML图、原型。当发现规范很复杂，可以将他们可视化。|
+|**Mathematical**|没有详细介绍 T^T|
+
+ ## 一个好的系统规范
+ - Tracebility: 所有的规范都可以追溯到用户需求，在报告中要写清楚支持的用户需求，可以按照重要性、难度分类。
+ - Testability：
