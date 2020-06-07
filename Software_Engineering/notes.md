@@ -8,6 +8,7 @@
 |Lecture 04|[需求建模](#lec4)|
 |Lecture 05|[需求验证](#lec5)|
 
+<br><br>
 
 # 介绍 
 <span id="lec1"></span>
@@ -29,17 +30,17 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/waterfallmodel.png?raw=true"  width="400" height="250"><img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/vmodel.png?raw=true"  width="400" height="250">
 
 **特征：** 以文档为驱动，每个阶段都有与其相关的里程碑和交付产品，每个阶段结束前完成文档审查改正错误。<br/>
-**缺点：** 1.需要稳定和完美的需求，无法应对需求的变化。2.无法进行修订或重构，过于inflexible和static。3.会产生许多连锁反应，无法进行迭代。4.工作量太大，会产生很多文档。
+**缺点：** 1. 需要稳定和完美的需求，无法应对需求的变化。2. 无法进行修订或重构，过于inflexible和static。3. 会产生许多连锁反应，无法进行迭代。4. 工作量太大，会产生很多文档。
 
 ### 迭代、螺旋模型（iterative）
 
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/iterativespiral.png?raw=true"  width="500" height="350">
 
-**特征：** 将开发和风险评估结合起来。将开发过程分成好多次迭代，每次迭代代表一个阶段，将一次迭代放在一个坐标轴里，四个象限分别代表：**1.明确目标、选择、约束**，**2.评估方案、风险分析、构建原型**，**3.开发验证**，**4.计划下阶段**。结合了瀑布模型和原型模型，适合比较复杂风险较大的系统。<br/>
-**缺点：** 1.系统结构通常不良 2.做得太多而计划不足，增加成本和时间。3.要求开发团队具有特殊技能。
+**特征：** 将开发和风险评估结合起来。将开发过程分成好多次迭代，每次迭代代表一个阶段，将一次迭代放在一个坐标轴里，四个象限分别代表：**1. 明确目标、选择、约束**，**2. 评估方案、风险分析、构建原型**，**3. 开发验证**，**4. 计划下阶段**。结合了瀑布模型和原型模型，适合比较复杂风险较大的系统。<br/>
+**缺点：** 1. 系统结构通常不良 2. 做得太多而计划不足，增加成本和时间。3. 要求开发团队具有特殊技能。
 
 
-
+<br><br>
 # 用户需求 
 <span id="lec2"></span>
 
@@ -66,8 +67,9 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - 在敏捷开发中经常被使用。
 - 简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。
 - 在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。
+<br><br>
 
-# 需求获取
+# 需求收集
 <span id="lec3"></span>
 ## 需求的分类：功能性vs非功能性
 **功能性需求：** 描述系统应该做什么，为用户和其他系统完成的功能服务。<br>
@@ -95,10 +97,18 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - 帮助你确定软件将使用哪些功能。
 
 **Ethnography**
-
+<br><br>
 # 需求模型
 <span id="lec4"></span>
+**模型的作用：** 1. 导出需求。2. 在设计过程中描述系统工程师实现的东西。3. 在实现后记录系统结构和操作。
+|模型名称｜介绍｜作用｜
+|-------|---|-----|
+|上下文模型（context diagram）| 在收集需求的时候，确定了许多需要交互的系统，你想知道这些系统是如何关联的,大部分是用于非功能性需求。|上下文模型定义了系统的边界，代表了需要开发的关键系统和其他系统、组件的关系，并且还有不开发的系统。|
 
+
+
+## Task
+<br><br>
 # 需求验证
 <span id="lec5"></span>
 **目的：** <br> 
