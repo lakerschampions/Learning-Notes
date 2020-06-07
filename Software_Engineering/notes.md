@@ -151,7 +151,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 # 原型
 <span id="lec8"></span>
-<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/prototype.png?raw=true"  width="500" height="400">
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/prototype.png?raw=true"  width="800" height="400">
 <br>
 **定义：** 一种设想所有规格协同工作的方法，测试规范的一致性，是系统具体但 **部分** 的实现。
 
