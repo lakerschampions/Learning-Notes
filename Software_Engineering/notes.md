@@ -107,7 +107,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
   - 必须和用户达成一致（external validation），其实就是和用户做“Requirements Review”。
 4. Specification也可以进行需求验证。
 
-**需求规格文档：**
+**需求规格说明书（SRS）：**
 - 把用户的需求翻译成正式的文档， **“做什么”** 而不是“怎样实现”。
 - 通常是一大组嵌套的列表，具有唯一的ID。
 - 生成的图表与之匹配。
@@ -138,5 +138,12 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 |**Mathematical**|没有详细介绍 T^T|
 
  ## 一个好的系统规范
- - Tracebility: 所有的规范都可以追溯到用户需求，在报告中要写清楚支持的用户需求，可以按照重要性、难度分类。
- - Testability：
+ - **Tracebility：** 所有的规范都可以追溯到用户需求，在报告中要写清楚支持的用户需求，可以按照重要性、难度分类。
+ - **Testability：** 你需要知道你实现了这个规范指定的内容，要让规范可测试。
+
+## 需求文档检查
+- **Validity checks:** 不同用户使用不同功能的有效性。
+- **Consistency checks:** 需求之间不能冲突。
+- **Completeness checks:** 包括所有用户想要的需求和约束。
+- **Realism checks:** 是否能被现有技术实现。
+- **Verifability checks:** 是否能被测试。
