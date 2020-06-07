@@ -62,17 +62,19 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 **User stories**
 - 将actors和case放在一起并且加上原因。
-- “As a <role>, I want <goal/desire> so that <outcome>” (a role, a goal and an effect/outcome/motivation)
+- “As a **role**, I want **goal/desire** so that **outcome**” (a role, a goal and an effect/outcome/motivation)
 - 在敏捷开发中经常被使用。
 - 简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。
 - 在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。
 
 # 需求获取
+<span id="lec3"></span>
 ## 需求的分类：功能性vs非功能性
 **功能性需求：** 描述系统应该做什么，为用户和其他系统完成的功能服务。<br>
 **非功能性需求：** 必须遵照的标准，约束条件，质量属性。
 
 ## 获取需求的方式
+
 **Surveys**
 - 有助于获得大多数人的意见但是不利于理解细节。
 - 常见的错误：发送错误的问卷，被精心设计来获得偏向性的答案。
@@ -94,6 +96,8 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 
 **Ethnography**
 
+# 需求模型
+<span id="lec4"></span>
 
 # 需求验证
 <span id="lec5"></span>
