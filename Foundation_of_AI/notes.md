@@ -14,7 +14,7 @@
 |:---:|:----:|:---:|
 |1943|WW2|图灵测试|
 |1956|John McCarthy 和 Marvin Minsky|AI的诞生|
-|1970s'|Lighthill...| “always beyond machines’ capability”, 感知机无法实现基本函数|
+|1970s'|Lighthill...| AI寒冬，感知机无法实现基本函数|
 |1980|John Searle|中文房间|
 |1980s||专家系统|
 |1990||Bottom up approach|
@@ -48,5 +48,5 @@
 
 |有监督学习|无监督学习|
 |:---:|:----:|
-|观察一些输入输出数据的例子学习一个从输入到输出的映射函数。<br>给定input x和labels y去学f(x)。||
-|**分类问题：** y是离散的（class label），学习决策边界去分类他们。<br> **回归问题：** y是连续的，学习连续的输入-输出映射，也叫“curve fitting”或者“function approximation”。||
+|观察一些输入输出数据的例子学习一个从输入到输出的映射函数。<br>给定input x和labels y去学f(x)。|只给你samples x，让你去推断f(x)来描述unlabeled data的隐藏结构|
+|**分类问题：** y是离散的（class label），学习决策边界去分类他们。<br> **回归问题：** y是连续的，学习连续的输入-输出映射，也叫“curve fitting”或者“function approximation”。|**聚类问题：** y是离散的，学习数据中存在的内在结构。<br> **降维问题：** y是连续的，发现数据的低维度平面。|
