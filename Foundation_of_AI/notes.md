@@ -13,10 +13,13 @@
 |时间|人物|内容|
 |:---:|:----:|:---:|
 |1943|WW2|图灵测试|
-|1956|John McCarthy 和 Marvin Minsky|AI的诞生|
+|1943|McCulloch & Pitts|第一个神经网络|
+|1949|Hebb|First learning rule｜
+|1956|McCarthy & Minsky|AI的诞生|
 |1970s'|Lighthill...| AI寒冬，感知机无法实现基本函数|
 |1980|John Searle|中文房间|
 |1980s||专家系统|
+|1985,1986|Parker,LeCun|发现多层神经网络解决非线性分割问题|
 |1990||Bottom up approach|
 |1997|IBM|AI Game, 深蓝算法|
 |2002||第一个家用机器人|
