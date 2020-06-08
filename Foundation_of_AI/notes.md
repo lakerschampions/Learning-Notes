@@ -2,4 +2,34 @@
 
 |内容引导|
 |:----:|
-|AI 介绍|
+|[AI 介绍](#intro)|
+
+
+# Introduction of AI
+<span id = 'intro'></span>
+
+## 几个里程碑事件
+
+|时间|人物|内容|
+|:---:|:----:|:---:|
+|1943|WW2|图灵测试|
+|1956|John McCarthy and Marvin Minsky|AI的诞生|
+|1970s'|Lighthill...| “always beyond machines’ capability”, 感知机无法实现基本函数|
+|1980|John Searle|中文房间|
+|1980s||专家系统|
+|1990||Bottom up approach|
+|1997|IBM|AI Game, 深蓝算法|
+|2002||第一个家用机器人|
+|2008|Google|Speech recognition|
+|2011|Watson|赢得智力竞赛节目《危险边缘》|
+|2014|Goostman|图灵测试通过|
+
+## 艾伦图灵：计算机科学之父
+**图灵测试：** 两个人和一台机器，一个人是interrogator，另一个人和机器在单独的房间里。审问者无法看到房间里的东西，他的任务是通过问问题来判断对方是人还是机器，机器的任务是fool审问者，如果能fool 30%以上，就会被认为intelligent。
+
+## 中文房间
+- Searle认为图灵测试不能测试机器能够思考，智能行为不代表智能。
+- 系统包括一个只会说英文的人（CPU），一本用英语写的中文手册（program）和一叠纸（容器设备）。
+- 房间里的人可以只根据翻英文手册来用中文回复。
+- 因此，运行程序并不能产生understanding，智能表现的像懂中文。
+- Searle提出强AI是指系统具有mind和mental states，弱AI只行为表现的智能。
