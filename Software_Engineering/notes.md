@@ -9,17 +9,18 @@
 |Lecture 05|[需求验证](#lec5)|
 |Lecture 07|[规范](#lec7)|
 |Lecture 08|[原型](#lec8)|
+|Lecture 09|[面向对象设计和测试计划](#lec9)|
 
 <br><br>
 
 # 介绍 
 <span id="lec1"></span>
 ## 软件
-**定义：** Software is something that is working, usually for ‘real humans’ to use to help them do something.<br/>
+**定义：** 软件是可以工作的东西，通常是用来帮助“real humans”做一些事情。<br/>
 **组成部分：** The compiled code, documentation, configuration components, installation/upgrade.
 
 ## 软件工程的定义
-The application of a systematic, disciplined, quantifiable approach to the development, operationand maintenance of software. That is, the application of engineering to software.
+在软件的开发、操作和维护中应用一种系统的、有纪律的、可量化的方法。即工程在软件中的应用。
 
 ## 软件过程
 ![SEprocess](https://github.com/lakerschampions/Learning-Notes/blob/master/images/seprocess.png?raw=true)
@@ -148,7 +149,7 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - **Completeness checks:** 包括所有用户想要的需求和约束。
 - **Realism checks:** 是否能被现有技术实现。
 - **Verifability checks:** 是否能被测试。
-
+<br><br>
 # 原型
 <span id="lec8"></span>
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/prototype.png?raw=true"  width="800" height="400">
@@ -167,3 +168,19 @@ The application of a systematic, disciplined, quantifiable approach to the devel
 - Adhoc的代码被用在了实际系统里。
 - 原型替代了文档的作用。
 - 被错误的stakeholder批准。
+<br><br>
+
+# 面向对象设计和测试计划
+<span id="lec9"></span>
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/OOD.png?raw=true"  width="600" height="400">
+
+## 如何进行面向对象设计
+- 理解并定义上下文和外部与系统的交互。
+- 设计系统体系结构。
+- 标识系统中的主体对象
+- 开发设计模型
+- 指定接口
+
+## 测试计划（作为设计的一部分）
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testplan.png?raw=true"  width="800" height="400">
+**开发测试计划：**
