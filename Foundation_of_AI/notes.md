@@ -14,7 +14,7 @@
 |:---:|:----:|:---:|
 |1943|WW2|图灵测试|
 |1943|McCulloch & Pitts|第一个神经网络|
-|1949|Hebb|First learning rule｜
+|1949|Hebb|First learning rule|
 |1956|McCarthy & Minsky|AI的诞生|
 |1970s'|Lighthill...| AI寒冬，感知机无法实现基本函数|
 |1980|John Searle|中文房间|
