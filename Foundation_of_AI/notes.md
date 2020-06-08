@@ -3,7 +3,7 @@
 |内容引导|
 |:----:|
 |[AI 介绍](#intro)|
-
+|[机器学习基础](#ML)|
 
 # Introduction of AI
 <span id = 'intro'></span>
@@ -13,7 +13,7 @@
 |时间|人物|内容|
 |:---:|:----:|:---:|
 |1943|WW2|图灵测试|
-|1956|John McCarthy and Marvin Minsky|AI的诞生|
+|1956|John McCarthy 和 Marvin Minsky|AI的诞生|
 |1970s'|Lighthill...| “always beyond machines’ capability”, 感知机无法实现基本函数|
 |1980|John Searle|中文房间|
 |1980s||专家系统|
@@ -33,3 +33,20 @@
 - 房间里的人可以只根据翻英文手册来用中文回复。
 - 因此，运行程序并不能产生understanding，智能表现的像懂中文。
 - Searle提出强AI是指系统具有mind和mental states，弱AI只行为表现的智能。
+<br><br>
+
+
+
+# 机器学习
+<span id = 'ML'></span>
+
+**定义：** 计算机从代表“过去经验”的数据里学习。<br>
+**训练集：** 学习模型的参数。<br>
+**测试集：** 评价模型的**泛化能力（generalization）**，推广到一个新的独立数据集。<br>
+
+## 有监督学习VS无监督学习
+
+|有监督学习|无监督学习|
+|:---:|:----:|
+|观察一些输入输出数据的例子学习一个从输入到输出的映射函数。<br>给定input x和labels y去学f(x)。||
+|**分类问题：** y是离散的（class label），学习决策边界去分类他们。<br> **回归问题：** y是连续的，学习连续的输入-输出映射，也叫“curve fitting”或者“function approximation”。||
