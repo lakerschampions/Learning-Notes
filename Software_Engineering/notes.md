@@ -182,8 +182,11 @@
 - 指定接口
 
 ## 测试计划（作为设计的一部分）
-<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testplan.png?raw=true"  width="800" height="400">
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testplan.png?raw=true"  width="800" height="350">
 
 **开发测试计划（Development）：** 证明类功能正确。<br>
 **系统/集成测试计划（System/Integration）：** 证明软件符合规范，组件接口是否正确。<br>
 **开发测试计划（Acceptance）：** 表明软件符合要求，经常用客户端完成。<br>
+
+### 测试计划中需要写的部分
+- 测试过程，对方法的描述
