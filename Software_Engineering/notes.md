@@ -14,7 +14,7 @@
 |Lecture 11|[单元测试&测试驱动开发](#lec11)|
 |Lecture 12|[发布测试&验收测试](#lec12)|
 
-<br><br>
+<br><br><br><br>
 
 # 介绍 
 <span id="lec1"></span>
@@ -46,7 +46,7 @@
 **缺点：** 1. 系统结构通常不良 2. 做得太多而计划不足，增加成本和时间。3. 要求开发团队具有特殊技能。
 
 
-<br><br>
+<br><br><br><br>
 # 用户需求 
 <span id="lec2"></span>
 
@@ -63,7 +63,7 @@
 |**Use case diagrams** |详细的说明每个利益相关者要完成的任务，用actors和case。||
 |**User stories**| 将actors和case放在一起并且加上原因。“As a **role**, I want **goal/desire** so that **outcome**” (a role, a goal and an effect/outcome/motivation)。在敏捷开发中经常被使用。|简洁明了，维护成本低，创造了一个清楚的需求清单，可以将项目分解成块根据重要性排序。在大型项目中很难使用，缺少细节和正式术语，无法描述过程、任务和上下文。|
 
-<br><br>
+<br><br><br><br>
 
 # 需求收集
 <span id="lec3"></span>
@@ -81,7 +81,7 @@
 |**Technology Tours**|发现了解任务中的所有技术。帮助你确定软件将使用哪些功能。||
 |**Ethnography**|感觉不是很重要😂|
 
-<br><br>
+<br><br><br><br>
 
 # 需求模型
 <span id="lec4"></span>
@@ -98,9 +98,8 @@
 |类图|在面向对象的代码中制定类|
 |状态图|表示某物可能存在的状态|
 
+<br><br><br><br>
 
-
-<br><br>
 # 需求验证
 <span id="lec5"></span>
 **目的：** <br> 
@@ -119,7 +118,7 @@
 - 清单被分类（重要性、风险）。
 - 项目结束时定义验收测试。
 
-<br><br>
+<br><br><br><br>
 
 # 规范
 <span id="lec7"></span>
@@ -152,7 +151,7 @@
 - **Completeness checks:** 包括所有用户想要的需求和约束。
 - **Realism checks:** 是否能被现有技术实现。
 - **Verifability checks:** 是否能被测试。
-<br><br>
+<br><br><br><br>
 # 原型
 <span id="lec8"></span>
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/prototype.png?raw=true"  width="800" height="400">
@@ -209,7 +208,7 @@
 **验证测试（Validation Testing）：** 先是软件测试会显示的正确答案。<br>
 **缺陷测试（Defect Testing）：** 显示软件不会中断的测试。
 
-
+<br><br><br><br>
 
 # 实施（implementation）
 <span id="lec10"></span>
@@ -221,8 +220,8 @@
 ## 编写代码的策略
 - **Test-Driven Development：** 在编写代码之前，编写他必须通过的自动测试；然后在编写代码，等他通过测试就说明完成了。
 - **Comment-Driven Development：** 先写注释，然后用代码填充注释。
-
-
+<br><br><br>
+<br>
 # 单元测试&测试驱动开发
 <span id="lec11"></span>
 |白盒测试|黑盒测试|
@@ -237,7 +236,7 @@
 
 **TDD的优点：** 它集成了规范、编码和测试的各个方面；在构建代码之前，让您考虑如何使用代码；这意味着您在“编写”代码之前先“计划”代码；这意味着你要从全局出发，而不是从当前的功能出发；当要修改代码的时候，他会帮你检查之前还可以通过的代码。
 <br><br>
-
+<br><br>
 # 发布测试&验收测试
 <span id="lec12"></span>
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testphase.png?raw=true"  width="700" height="350">
@@ -248,3 +247,5 @@
 ## 发布测试（系统测试）
 从用户使用的角度进行测试，将完成了集成测试的系统放在真是的运行环境下运行，是validaiton testing而不是defect testing，是**黑盒测试**。
 
+## 验收测试
+在发布测试之后，软件正式使用前的最终测试阶段，使用客户提供的真实数据进行测试。
