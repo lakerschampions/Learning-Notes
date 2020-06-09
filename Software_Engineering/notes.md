@@ -249,3 +249,5 @@
 
 ## 验收测试
 在发布测试之后，软件正式使用前的最终测试阶段，使用客户提供的真实数据进行测试。还可能揭示出系统不能满足的用户需要或者系统不可接受的表现。
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/acceptancetesting.png?raw=true"  width="700" height="350">
+**测试步骤：** 定义测试标准->计划验收测试->导出验收测试->进行测试->协商测试结果->接受/拒绝系统
