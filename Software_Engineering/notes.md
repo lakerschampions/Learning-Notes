@@ -10,6 +10,7 @@
 |Lecture 07|[规范](#lec7)|
 |Lecture 08|[原型](#lec8)|
 |Lecture 09|[面向对象设计和测试计划](#lec9)|
+|Lecture 10|[实施](#lec10)|
 
 <br><br>
 
@@ -206,3 +207,11 @@
 **验证测试（Validation Testing）：** 先是软件测试会显示的正确答案。<br>
 **缺陷测试（Defect Testing）：** 显示软件不会中断的测试。
 
+
+
+# 实施（implementation）
+<span id="lec10"></span>
+
+- **Developer：** 建造一个特殊的类，将代码交付给团队审批和使用。
+- **The Development Team Manager：** 证明整个系统已完成，交出文件。
+- **The Integration Team：** 集成类，并构建主系统。
