@@ -220,8 +220,8 @@
 ## 编写代码的策略
 - **Test-Driven Development：** 在编写代码之前，编写他必须通过的自动测试；然后在编写代码，等他通过测试就说明完成了。
 - **Comment-Driven Development：** 先写注释，然后用代码填充注释。
-<br><br><br>
-<br>
+<br><br><br><br>
+
 # 单元测试&测试驱动开发
 <span id="lec11"></span>
 
