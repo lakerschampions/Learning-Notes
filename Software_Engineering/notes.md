@@ -215,3 +215,9 @@
 - **Developer：** 建造一个特殊的类，将代码交付给团队审批和使用。
 - **The Development Team Manager：** 证明整个系统已完成，交出文件。
 - **The Integration Team：** 集成类，并构建主系统。
+
+## 编写代码的策略
+- **Test-Driven Development：**在编写代码之前，编写他必须通过的自动测试；然后在编写代码，等他通过测试就说明完成了。
+- **Comment-Driven Development：** 先写注释，然后用代码填充注释。
+
+
