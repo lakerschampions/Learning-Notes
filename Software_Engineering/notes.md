@@ -196,11 +196,11 @@
 - 测试记录的过程
 - 需要什么样的硬件和软件的配置
 - 将要测试的所有精确用例
-<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testplandocument.png?raw=true"  width="800" height="350">
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testplandocument.png?raw=true"  width="700" height="350">
 
 ## 设计测试用例
 **需要包含：** 正在测试的内容的声明，测试输入的规格，预期输出，测试所需步骤。
-<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testcase.png?raw=true"  width="800" height="350">
+<img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/testcase.png?raw=true"  width="800" height="250">
 
 ## 测试类型
 **验证测试（Validation Testing）：** 先是软件测试会显示的正确答案。<br>
