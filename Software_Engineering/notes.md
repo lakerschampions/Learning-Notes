@@ -13,6 +13,8 @@
 |Lecture 10|[实施](#lec10)|
 |Lecture 11|[单元测试&测试驱动开发](#lec11)|
 |Lecture 12|[发布测试&验收测试](#lec12)|
+|Lecture 13|[配置部署](#lec13)|
+
 
 <br><br><br><br>
 
@@ -254,3 +256,15 @@
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/acceptancetesting.png?raw=true"  width="700" height="150">
 <br>
 **测试步骤：** 定义测试标准->计划验收测试->导出验收测试->进行测试->协商测试结果->接受/拒绝系统
+<br><br><br><br>
+
+# 配置部署
+<span id="lec13"></span>
+
+|开发频道名称|描述|
+|:---:|:----:|
+|Stable versions|当前稳定版本|
+|Beta versions|官方版本|
+|Dev versions|比每周更新更加频繁|
+|Canary builds|每日发布，一建成就发布|
+
