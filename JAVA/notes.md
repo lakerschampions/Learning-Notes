@@ -15,3 +15,32 @@ File f = new File("/Users/chuzhengtian/Desktop/hello.txt");     //定义一个fi
 |getAbsolutePath()|绝对路径|canRead()|是否可写|||||list()|文件夹清单|
 |getParent()|获取父级文件夹|isFile()|是否是文件|
 |renameTo(File newname)|改名|isDirectory()|是否是文件夹|
+
+### 字节输入流：
+ ```
+ try{
+   FileInputStream in = new FileInputStream("/Users/chuzhengtian/Desktop/hello.txt");
+   byte[] b = new byte[10];
+   len = 0;
+   while((len = in.read(b)) != -1){
+      System.out.println(new String(b,0,len));
+   }
+   in.close();
+ }catch(Exception e){
+   e.printStackTrace();
+ }
+ ```
+ 
+ ### 字节输出流
+ ```
+ try{
+   FileOutputStream out = new FileOutputStream(""/Users/chuzhengtian/Desktop/hello2.txt"");
+   String str = "kgkekdkgvjlw";
+   out.write(str.getBytes());  //写到内存
+   out.flush(); //把内存中的数据写到硬盘
+   out.close();
+ catch(Exception e){
+   e.printStackTrace();
+ }
+ 
+ ```
