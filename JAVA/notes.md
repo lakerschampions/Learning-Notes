@@ -16,14 +16,14 @@ File f = new File("/Users/chuzhengtian/Desktop/hello.txt");     //定义一个fi
 |getParent()|获取父级文件夹|isFile()|是否是文件|
 |renameTo(File newname)|改名|isDirectory()|是否是文件夹|
 
-### 字节输入流：
+### 字节输入流
  ```
  try{
    FileInputStream in = new FileInputStream("/Users/chuzhengtian/Desktop/hello.txt");
    byte[] b = new byte[10];
    len = 0;
-   while((len = in.read(b)) != -1){
-      System.out.println(new String(b,0,len));
+   while((len = in.read(b)) != -1){     // read()返回读入缓冲区的总字节数；如果因为已经到达流末尾而不再有数据可用，则返回 -1。
+      System.out.println(new String(b,0,len)); //b：读入数据到缓存区；off：初始偏移量；len：要读取的最大字节数
    }
    in.close();
  }catch(Exception e){
