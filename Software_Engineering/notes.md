@@ -445,7 +445,15 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 
 ### 我们什么时候应该考虑风险？
 
-### 软件风险和项目风险有什么区别？处理项目风险有哪些策略？在做了软件风险分析之后，项目有什么变化？
+### 软件风险和项目风险有什么区别？
+软件风险：软件绝不应该发生什么
+
+### 处理项目风险有哪些策略？
+- Avoidance strategies - actions taken to reduce the risk happening
+- Minimization strategies - reducing the impact if it happens
+- Contingency plans - what you will do/change if it happens 
+
+### 在做了软件风险分析之后，项目有什么变化？
 
 # 项目计划
 <span id="lec19"></span>
@@ -453,10 +461,12 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 ### 什么是甘特图？什么是PERT图？
 
 ### 关键路径是什么？为什么？如何计算？
+The longest path (worst case) is the critical path which helps you cost the effort for the worst case rather than the best case.
 
 ### 关键路径任务迟到有什么关系？
 
 ### 我们如何估算一个项目的成本？
+1.估计项目完成的最小/最大时间。2.添加应急估计。3.基于经验的知识。4.算法成本建模。
 
 ### 什么因素导致项目成本与销售价值的差异？
 
