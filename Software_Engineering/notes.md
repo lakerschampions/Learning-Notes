@@ -9,7 +9,7 @@
 |Lecture 05|[需求验证](#lec5)|Lecture 15|[软件质量](#lec15)|
 |Lecture 07|[规范](#lec7)|Lecture 16|[敏捷开发](#lec16)|
 |Lecture 08|[原型](#lec8)|Lecture 17|[风险管理](#lec18)|
-|Lecture 09|[面向对象设计和测试计划](#lec9)|
+|Lecture 09|[面向对象设计和测试计划](#lec9)|Lecture 19|[项目计划](#lec19)|
 |Lecture 10|[实施](#lec10)|
 
 
@@ -345,6 +345,10 @@
 
 ## 项目风险
 ### 风险策略
-- 规避策略-为降低风险而采取的行动
-- 最小化策略-如果发生，减少影响
-- 应急计划-如果发生，你将做什么/改变什么
+- **规避策略（Avoidance strategies）**-为降低风险而采取的行动
+- **最小化策略（Minimization strategies）**-如果发生，减少影响
+- **应急计划（Contingency plans）**-如果发生，你将做什么/改变什么
+
+
+# 项目计划
+<span id="lec19"></span>
