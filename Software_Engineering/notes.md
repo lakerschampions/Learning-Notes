@@ -178,6 +178,7 @@ traditional methods;agile methods
 - **Realism checks:** 是否能被现有技术实现。
 - **Verifability checks:** 是否能被测试。
 <br><br><br><br>
+
 # 原型
 <span id="lec8"></span>
 <img src="https://github.com/lakerschampions/Learning-Notes/blob/master/images/prototype.png?raw=true"  width="800" height="400">
@@ -200,8 +201,10 @@ traditional methods;agile methods
 ## 课后问题
 
 ### 编写规范的主要方法？规范符号类型？
+Natural language;Structured;graphical;mathematical
 
 ### 我们为什么要创建原型？
+很难从规格中理解总体思路，通常规格中充满了冲突的想法，原型是一种设想所有规格如何协同工作的方法，是一个具体但部分的系统的实现。具有测试一致性，易于展开讨论。
 
 ### 为什么要制作类图？
 
