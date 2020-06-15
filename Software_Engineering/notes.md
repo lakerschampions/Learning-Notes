@@ -57,6 +57,8 @@ Specification,Development,Verification,evolution
 traditional methods;agile methods
 
 ### 最便宜和最昂贵的问题是什么？
+最便宜：requirements
+最贵：maintenance 
 
 <br><br><br><br>
 # 用户需求 
@@ -95,7 +97,7 @@ traditional methods;agile methods
 |**Ethnography**|感觉不是很重要😂|
 
 ## 课后问题
-### 有什么区别？
+### 需求和规范有什么区别？
 
 ### 如何做好需求收集工作？
 
@@ -508,7 +510,7 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 ### 什么是甘特图？什么是PERT图？
 
 ### 关键路径是什么？为什么？如何计算？
-The longest path (worst case) is the critical path which helps you cost the effort for the worst case rather than the best case.
+The longest path (worst case) is the critical path which helps you cost the effort for the worst case rather than the best case.关键路径上任何活动的延长都会导致整个路径的延长。如果想缩短项目周期，就必须缩短关键路径。
 
 ### 关键路径任务迟到有什么关系？
 
