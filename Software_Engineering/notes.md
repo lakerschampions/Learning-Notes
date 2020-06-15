@@ -376,7 +376,8 @@ Release management is a continuous strategy planning for releases
 ## QA团队
 **目标：** 改进项目之间的流程，记录工作良好的方面，将成功的流程应用于其他项目，**提高公司的质量保证标准。**
 ### 制定质量计划：为团队设定实现目标的标准
-项目质量文件的关键部分：
+为项目推荐质量提升流程，确定哪些是该项目的优质产品，让每个人都知道目标质量是什么而不是目标功能。
+#### 项目质量文件的关键部分：
 - 产品介绍：预定市场等
 - 产品计划：关键发布日期、维护等
 - 流程描述：此项目将遵循什么流程
@@ -390,7 +391,9 @@ Release management is a continuous strategy planning for releases
 
 ## 课后问题
 ### 质量保证团队应该做的3（4）件事是什么？为什么这是一个元项目问题？
-
+- Planning for Quality
+- Defining Standards
+- Checking for Quality 
 ### 你什么时候应该关心软件质量？
 
 ### 应该什么时候进行审查和检查？（比较传统方法与敏捷方法）为什么评审在某种形式上如此有价值？
@@ -406,7 +409,7 @@ Release management is a continuous strategy planning for releases
 <span id="lec16"></span>
 
 ## 敏捷开发 VS 传统开发
-|敏捷开发|传统开发|
+|传统开发|敏捷开发|
 |:---:|:-----:|
 |瀑布模型，V模型|迭代模型|
 |需求表|用户故事，personas|
