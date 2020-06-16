@@ -98,12 +98,18 @@ traditional methods;agile methods
 
 ## 课后问题
 ### 需求和规范有什么区别？
+Requirements: What the skateholders needs to be able to do,the function or performance that system should have.
+Specifications: What the system must do to meet the requirements.
 
 ### 如何做好需求收集工作？
 
-### 功能性需求和非功能性需求有什么区别？
+
+### 功能性需求和非功能性需求有什么区别?
+Functional: Describe what the system should do to serve users and other systems
+Unfunctional: Standards, constraints, quality attributes that must be followed.
 
 ### 如何建立需求模型？用户、任务等？
+
 
 ### 你能用UML做什么？UML的类型？
 
@@ -330,6 +336,7 @@ Release management is a continuous strategy planning for releases
 原因：需要在不同平台，不同配置上发布。
 
 ### 重要问题：如果验收测试是为了与客户一起工作，那么什么情况下发布管理更适合？
+
 <br><br><br><br>
 
 # 发展维护
@@ -406,6 +413,7 @@ Release management is a continuous strategy planning for releases
 ### 如何衡量代码的质量？
 
 ### 关于验收测试的思考：什么时候是让客户参与的最佳时机？确保他们对产品满意的最佳方法是什么？
+
 <br><br><br><br>
 
 # 敏捷开发
@@ -467,6 +475,7 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 
 ### 敏捷最重要的是什么？
 **Be agile.**
+
 ### 为什么编码和命名约定很重要？-什么是编码启发式？
 
 ### 你如何分配工作？
@@ -478,6 +487,7 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 ### 主要的调试策略是什么-橡皮鸭有什么好处？
 
 ### 问题、里程碑等是如何帮助敏捷团队通过git存储库进行协作的？
+
 <br><br><br><br>
 
 # 风险管理
@@ -499,9 +509,11 @@ XP是一种近螺旋式的开发方法，它将复杂的开发过程分解为一
 ### 为什么风险分析很重要？我们应该如何评估风险？
 
 ### 我们什么时候应该考虑风险？
+After determining the objectives,alternatives and constraints for projects.
 
 ### 软件风险和项目风险有什么区别？
-软件风险：软件绝不应该发生什么
+software risk: Security and dependability of the reqs,specs and designs of system.
+project risk: Possible problems in the future which makes the project not going smoothly.
 
 ### 处理项目风险有哪些策略？
 - Avoidance strategies - actions taken to reduce the risk happening
