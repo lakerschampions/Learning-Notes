@@ -180,6 +180,10 @@ finally{
 ```
 
 
+# 读写
+## PrintWriter
+
+## Scanner
 
 
 
@@ -229,3 +233,14 @@ File f = new File("/Users/chuzhengtian/Desktop/hello.txt");     //定义一个fi
  }
  
  ```
+
+# 设计模式
+- 模式是标准问题在上下文中的重复解决方案。
+- 模式描述了在我们的环境中一次又一次出现的问题，然后描述了该问题解决方案的核心，这样您就可以多次使用该解决方案，而无需重复使用相同的方法。
+- 设计模式是解决面向对象设计问题的独立于编程语言的策略。
+- 设计模式代表一个想法，而不是一个特定的实现。
+- 通过使用设计模式，你可以使你的代码更加灵活，可重用和可维护。
+
+## Creational Patterns
+## Structural Patterns
+## Behavioral Patterns
