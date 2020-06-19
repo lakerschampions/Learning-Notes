@@ -36,10 +36,14 @@ class Subclass extends Superclass { .....}
 - 子类构造函数可以在执行其他操作之前，通过使用**super（）** 调用超类构造函数。
 - 如果不调用超类构造函数，则会自动调用无参数构造函数。
 
-### 重写
-子类可以重写从父类继承的方法，需要相同的名称，参数列表和返回类型，不能重写构造函数和final和static修饰的方法。
 
 ### Encapsulation
+
+Getters and Setters
+
+
+
+
 ### Abstraction 
 The process of hiding the implementation details and only showing what the object does to the user.
 #### 抽象类
@@ -47,6 +51,7 @@ The process of hiding the implementation details and only showing what the objec
 - 抽象类可以包含抽象和非抽象方法
 - 如果抽象类的子类不包含它的所有方法，那么它也必须是一个抽象类
 - 如果在类中声明了抽象方法，那么也必须声明类抽象，但是没有抽象方法的类可以标记为抽象。
+
 #### 抽象方法
 - 一个不实现的方法
 - 只有抽象类才能包含抽象方法
@@ -55,12 +60,15 @@ The process of hiding the implementation details and only showing what the objec
 - 必须是public或者protected
 
 #### 接口
-- 接口中只能存在public abstract 方法
-- 所有方法都必须为抽象
+- 接口中可以包含final变量，默认方法，静态方法和内部类
 - 如果一个非抽象类遵循了某个接口，就必须实现该接口中的所有方法。对于遵循某个接口的抽象类，可以不实现该接口中的抽象方法。
-- 成员变量只能是public static final类型的
 
 ### Polymorphism
+#### 重写
+子类可以重写从父类继承的方法，需要相同的名称，参数列表和返回类型，不能重写构造函数和final和static修饰的方法。
+#### 方法重载
+一个类中的方法分享同一个名字，但是有不同的参数
+
 
 ### 原始数据类型
 #### 整数类型
@@ -86,8 +94,6 @@ class,interface,list
 |default|y|y|n|n|
 |private|y|n|n|n|
 
-# 方法重载
-一个类中的方法分享同一个名字，但是有不同的参数
 
 # 内部类
 在另一个类中声明的类叫做内部类，他的作用域是封闭类，可以**无条件访问**封闭类中的所有方法和变量。<br>
@@ -128,6 +134,53 @@ class Circle {
 - 在新的关键字创造的时候隐式调用
 - 可以直接在现有对象上调用方法
 - 名称必须和类名相同，不能反回任何内容
+
+# Time and Date
+|java.time package|example|
+|:---:|:----:|
+|Year|2019|
+|LocalDate|2019-05-03|
+|LocalTime|11:13:30|
+|ZoneId|time-zone ID|
+
+# 泛型
+- 能够在编译时而不是运行时检测错误
+- 如果试图使用带有不兼容对象的类或方法，则会发生编译错误
+- 允许您指定该类或方法可以使用的对象的允许类型
+
+# 异常处理
+- **RuntimeException, Error and their subclasses** are known as **unchecked exceptions**. 
+- All other exceptions are known as **checked exceptions**, meaning that the compiler forces the programmer to check and deal with the exceptions.
+
+## 声明异常
+```
+public void method() throws IOException
+```
+
+## 抛出异常
+```
+public void setRadius(double newRadius) throws IllegalArgumentException {
+    if (newRadius >= 0)
+        radius = newRadius;
+    else throw new IllegalArgumentException("Radius cannot be negative");
+}
+```
+
+## 抓取异常
+```
+try {
+    statements; // Statements that may throw exceptions
+}
+catch (Exception1 exVar1) {
+    handler for exception1;
+}
+finally{
+    finalstatements;
+}
+```
+
+
+
 
 
 # IO主要内容
