@@ -52,4 +52,31 @@ factors n =
  [x | x ← [1..n], n `mod` x == 0] 
  ```
 
- 
+## Higher-Order Functions
+A function is called **higher-order** if it takes a function as an argument or returns a function as a result.
+```
+twice :: (a → a) → a → a
+twice f x = f (f x)
+```
+## foldr
+```
+foldr :: (a → b → b) → b → [a] → b
+foldr f v [] = v
+foldr f v (x:xs) = f x (foldr f v xs)
+```
+```
+sum = foldr (+) 0
+product = foldr (*) 1
+or = foldr (||) False
+and = foldr (&&) True
+length = foldr (\_ n -> 1+n) 0
+reverse = foldr (\x xs -> xs ++ [x]) []
+
+```
+
+## Lazy Evalution
+- Avoids doing unnecessary evaluation.
+- Allows programs to be more modular.
+- Allows us to program with infinite lists.
+<br>
+Lazy Evaluation = Outmost reduction + Sharing
