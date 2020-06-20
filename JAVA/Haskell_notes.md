@@ -54,6 +54,12 @@ factors n =
 
 ## Higher-Order Functions
 A function is called **higher-order** if it takes a function as an argument or returns a function as a result.
+
+### Why are they useful?
+- Common programming idioms can be encoded as functions within the language itself
+- Domain specific languages can be defined as collections of higher-order functions.
+- Encapsulation using partial function application can be used to hide implementation details.
+- Algebraic properties of higher-order functions can be used to reason about programs.
 ```
 twice :: (a → a) → a → a
 twice f x = f (f x)
