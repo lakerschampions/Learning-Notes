@@ -49,7 +49,7 @@ https://juejin.im/post/5bce68226fb9a05ce46a0476
 <br><br>
 <span id = 'datatype'></span>
 # 数据类型
-原始数据类型：
+### 原始数据类型：
 |类型名称|数据类型|内存|范围|
 |:---:|:----:|:----:|:----:|
 |**byte**|整型|8bit|-128～127|
@@ -62,9 +62,9 @@ https://juejin.im/post/5bce68226fb9a05ce46a0476
 |**char**|字符型||单引号扩起来的单个字母数字符号|
 
 
-引用数据类型：
-- class,interface,list <br>
-- 时间型：
+### 引用数据类型：
+class,interface,list <br>
+时间型：
 |java.time package|example|
 |:---:|:----:|
 |Year|2019|
