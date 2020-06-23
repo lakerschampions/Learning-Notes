@@ -16,6 +16,7 @@
 **优点：** 有良好的平台兼容性，只要安装了虚拟机，就可以。容易维护，方便快速部署，不用停机维护。<br>
 **缺点：** 每次运行的时候都要解释一遍，性能上不如编译型语言。
 
+<br><br>
 <span id = 'var'></span>
 # 变量
 **实例变量：** 在类中定义（方法外），在类初始化时初始化，不同实例中有不同的值。<br>
@@ -60,7 +61,16 @@ https://juejin.im/post/5bce68226fb9a05ce46a0476
 |**boolean**|布尔型||true,false|
 |**char**|字符型||单引号扩起来的单个字母数字符号|
 
-引用数据类型：class,interface,list <br>
+
+引用数据类型：
+- class,interface,list <br>
+- 时间型：
+|java.time package|example|
+|:---:|:----:|
+|Year|2019|
+|LocalDate|2019-05-03|
+|LocalTime|11:13:30|
+|ZoneId|time-zone ID|
 
 原始类型和引用类型都使用按值传递，参数值被复制到方法的参数中，如果复制的参数是原始类型，更改不会影响原始参数；如果是引用类型，更改会影响对象，因为对对象的引用是复制的。
 <br><br>
@@ -123,6 +133,7 @@ The process of hiding the implementation details and only showing what the objec
 一个类中的方法分享同一个名字，但是有不同的参数
 
 
+<br><br>
 
 # 内部类
 在另一个类中声明的类叫做内部类，他的作用域是封闭类，可以**无条件访问**封闭类中的所有方法和变量。<br>
@@ -164,13 +175,9 @@ class Circle {
 - 可以直接在现有对象上调用方法
 - 名称必须和类名相同，不能反回任何内容
 
-# Time and Date
-|java.time package|example|
-|:---:|:----:|
-|Year|2019|
-|LocalDate|2019-05-03|
-|LocalTime|11:13:30|
-|ZoneId|time-zone ID|
+
+
+<br><br>
 
 # 泛型
 - 能够在编译时而不是运行时检测错误
@@ -207,14 +214,14 @@ finally{
     finalstatements;
 }
 ```
-
+<br><br>
 
 # 读写
 ## PrintWriter
 
 ## Scanner
 
-
+<br><br>
 
 # IO主要内容
 ## java.io.File类
@@ -270,6 +277,3 @@ File f = new File("/Users/chuzhengtian/Desktop/hello.txt");     //定义一个fi
 - 设计模式代表一个想法，而不是一个特定的实现。
 - 通过使用设计模式，你可以使你的代码更加灵活，可重用和可维护。
 
-## Creational Patterns
-## Structural Patterns
-## Behavioral Patterns
