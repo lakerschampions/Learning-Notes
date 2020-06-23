@@ -269,7 +269,7 @@ File f = new File("/Users/chuzhengtian/Desktop/hello.txt");     //定义一个fi
  }
  
  ```
-
+<br><br>
 # 设计模式
 在实际编程过程中，逐渐总结出的一些解决问题的套路。
 
@@ -280,7 +280,27 @@ File f = new File("/Users/chuzhengtian/Desktop/hello.txt");     //定义一个fi
 ### 工厂模式
 通过面向对象的手法，将创造的具体对象的创建工作延迟到子类，从而提供一种扩展的策略。
 
-
+<br><br>
 # 集合
 ## HashSet 
 按照哈希算法来存储集合元素，不能保证元素的排序顺序，不可重复，不是线程安全的，元素可以是null。当向hashset集合中存入一个元素时，hashset会调用hashCode()方法来得到对象的哈希值，又哈希值来决定对象的位置。
+
+```
+Set set = new HashSet();
+set.add(1);
+set.add("a");
+set.remove(1);
+set.clear();
+
+//使用迭代器遍历
+Iterator it = set.iterator();
+while (it.hasNext()){
+    System.out.print(it.next());
+}
+
+// for each 遍历
+for(Object obj : set){
+    System.out.print(obj);
+}
+```
+
