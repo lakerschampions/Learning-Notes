@@ -5,6 +5,7 @@
 |目录|
 |:--:|
 |[数据类型](#datatype)|
+|[四大特征](#four)|
 
 
 
@@ -36,7 +37,7 @@ https://juejin.im/post/5bce68226fb9a05ce46a0476
 ### 静态类
 最外层的类不能设置为静态，最内层的类可以设置。静态嵌套类只能访问外部类的静态成员。
 
-
+<br><br>
 <span id = 'datatype'></span>
 # 数据类型
 原始数据类型：
@@ -54,10 +55,13 @@ https://juejin.im/post/5bce68226fb9a05ce46a0476
 引用数据类型：class,interface,list <br>
 
 原始类型和引用类型都使用按值传递，参数值被复制到方法的参数中，如果复制的参数是原始类型，更改不会影响原始参数；如果是引用类型，更改会影响对象，因为对对象的引用是复制的。
+<br><br>
+<span id = 'four'></span>
+# 面向对象编程四大特征
+允许多个开发人员更有效的处理同一个项目，具有[继承](#inher),[封装](#encap),[抽象](#abs),[多态](#poly)四大特征。
 
-# 面向对象编程
-允许多个开发人员更有效的处理同一个项目。
-## Inheritance
+<span id = 'inher'></span>
+## 继承
 - 建立一个具有共有特征的普通类，子类继承父类的所有变量和方法
 
 ```
@@ -69,15 +73,18 @@ class Subclass extends Superclass { .....}
 - 子类构造函数可以在执行其他操作之前，通过使用**super（）** 调用超类构造函数。
 - 如果不调用超类构造函数，则会自动调用无参数构造函数。
 
+<br><br>
 
-### Encapsulation
+<span id = 'encap'></span>
+## 封装
 
 Getters and Setters
 
 
+<br><br>
 
-
-### Abstraction 
+<span id = 'abs'></span>
+## 抽象
 The process of hiding the implementation details and only showing what the object does to the user.
 #### 抽象类
 - 此类的任何子类都必须包含其超类中所有抽象方法的实现
@@ -96,7 +103,10 @@ The process of hiding the implementation details and only showing what the objec
 - 接口中可以包含final变量，默认方法，静态方法和内部类
 - 如果一个非抽象类遵循了某个接口，就必须实现该接口中的所有方法。对于遵循某个接口的抽象类，可以不实现该接口中的抽象方法。
 
-### Polymorphism
+<br><br><br>
+
+<span id = 'poly'></span>
+## 多态
 #### 重写
 子类可以重写从父类继承的方法，需要相同的名称，参数列表和返回类型，不能重写构造函数和final和static修饰的方法。
 #### 方法重载
