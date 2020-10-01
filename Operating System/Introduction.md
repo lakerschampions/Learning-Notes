@@ -26,3 +26,12 @@ memory. Just assume that the code will start running at address 0.
 - Different types of interrupts: By CPU clock; I/O interrupts for I/O completion or error codes; Software generated.
 - Context switches (i.e. switching between processes) can be initiated by timer interrupts after a “set time”.
 ![img](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/interrupts.png)
+
+1. Timer generates an interrupt <br>
+2. CPU finishes current instruction and tests for interrupt<br>
+3. Transfer to interrupt service routine<br>
+- Hardware saves current process state (PSW, program counter)
+- Set program counter to interrupt service routine
+- Save registers and other state information
+4. Carry out interrupt service routine (scheduler)<br>
+5. Restore next process to run<br>
