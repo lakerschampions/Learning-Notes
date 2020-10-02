@@ -15,3 +15,11 @@ The process control block contains all information necessary to administer the p
 - Contains: The program code, A data segment, stack and heap.
 - Every process has its own logical address space, in which the stack and heap are placed at opposite sides to allow them to grow.
 - Some OS’es use address space layout randomisation.
+
+## Process States and Transitions
+![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/5states.png)
+- A new process has just been created (has a PCB) and is waiting to be admitted (it may not yet be in memory)
+- A ready process is waiting for the CPU to become available (e.g. unblocked or timer interrupt)
+- A running process “owns” the CPU
+- A blocked process cannot continue, e.g. is waiting for I/O
+- A terminated process is no longer executable (the data structures - PCB may be temporarily preserved)
