@@ -76,3 +76,16 @@ System calls are necessary to notify the OS that the process has terminated.
 - fork() creates an exact copy of the current process (The first instruction carried out by the child is the first one after the fork call)
 - fork() returns the process identifier of the child process to the parent process (iPID > 0)
 - fork() returns 0 to the child process (iPID = 0)
+
+
+## Process Scheduling
+The OS is responsible for managing and scheduling processes. It relies on the scheduler (dispatcher) to decide which process to run next, which uses a scheduling algorithm to do so. The type of algorithm used by the scheduler is influenced by the type of operating system (e.g., real time vs. batch)
+
+#### Classification by Time Horizon
+**Long term:** applies to new processes and controls the degree of multiprogramming by deciding which processes to admit to the system when A good mix of CPU and I/O bound processes is favourable to keep all resources as busy as possible. Usually absent in popular modern OS
+**Medium term:** controls swapping and the degree of multi-programming
+**Short term:** decide which process to run next. Manages the ready queue. Invoked very frequently, hence must be fast. Usually called in response to clock interrupts, I/O interrupts, or blocking system calls.
+
+#### Classification by Approach
+**Non-preemptive:** processes are only interrupted voluntarily (e.g., I/O operation or “nice” system call – yield()), Windows 3.1 and DOS were non-preemtive
+**Preemptive:** processes can be interrupted forcefully or voluntarily. This requires context switches which generate overhead, too many of them should be avoided (recall last lecture). Prevents processes from monopolising the CPU. Most popular modern operating systems are preemptive
