@@ -81,12 +81,12 @@ System calls are necessary to notify the OS that the process has terminated.
 ## Process Scheduling
 The OS is responsible for managing and scheduling processes. It relies on the scheduler (dispatcher) to decide which process to run next, which uses a scheduling algorithm to do so. The type of algorithm used by the scheduler is influenced by the type of operating system (e.g., real time vs. batch)
 
-#### Classification by Time Horizon
+### Classification by Time Horizon
 - **Long term:** applies to new processes and controls the degree of multiprogramming by deciding which processes to admit to the system when A good mix of CPU and I/O bound processes is favourable to keep all resources as busy as possible. Usually absent in popular modern OS<br>
 - **Medium term:** controls swapping and the degree of multi-programming.<br>
 - **Short term:** decide which process to run next. Manages the ready queue. Invoked very frequently, hence must be fast. Usually called in response to clock interrupts, I/O interrupts, or blocking system calls.
 
-#### Classification by Approach
+### Classification by Approach
 - **Non-preemptive:** processes are only interrupted voluntarily (e.g., I/O operation or “nice” system call – yield()), Windows 3.1 and DOS were non-preemtive<br>
 - **Preemptive:** processes can be interrupted forcefully or voluntarily. This requires context switches which generate overhead, too many of them should be avoided (recall last lecture). Prevents processes from monopolising the CPU. Most popular modern operating systems are preemptive
 
@@ -101,3 +101,20 @@ System oriented criteria:
 - Fairness: Are processing power/waiting time equally distributed? Are some processes kept waiting excessively long (starvation)
 
 ## Scheduling Algorithms
+#### First Come First Served
+- Concept: a non-preemtive algorithm that operates as a strict queueing mechanism and schedules the processes in the same order that they were added to the queue
+- Advantages: positional fairness and easy to implement
+- Disadvantages: Favours long processes over short ones (think of the supermarket checkout!). Could compromise resource utilisation, i.e., CPU vs. I/O devices
+![img]()
+
+#### Shortest Job First
+- Concept: A non-preemtive algorithm that starts processes in order of ascending processing time using a provided/known estimate of the processing
+- Advantages: always result in the optimal turnaround time
+- Disadvantages: Starvation might occur. Fairness and predictability are compromised. Processing times have to be known beforehand
+
+#### Round Robin
+- Concept: a preemptive version of FCFS that forces context switches at periodic intervals or time slices. Processes run in the order that they were added to the queue. Processes are forcefully interrupted by the timer
+- Advantages: Improved response time. Effective for general purpose interactive/time sharing systems
+- Disadvantages: Increased context switching and thus overhead. Favours CPU bound processes (which usually run long) over I/O processes (which do not run long). Can be prevented by working with multiple queues? Can reduce to FCFS.
+
+#### 
