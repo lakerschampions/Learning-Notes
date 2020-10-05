@@ -82,10 +82,22 @@ System calls are necessary to notify the OS that the process has terminated.
 The OS is responsible for managing and scheduling processes. It relies on the scheduler (dispatcher) to decide which process to run next, which uses a scheduling algorithm to do so. The type of algorithm used by the scheduler is influenced by the type of operating system (e.g., real time vs. batch)
 
 #### Classification by Time Horizon
-**Long term:** applies to new processes and controls the degree of multiprogramming by deciding which processes to admit to the system when A good mix of CPU and I/O bound processes is favourable to keep all resources as busy as possible. Usually absent in popular modern OS
-**Medium term:** controls swapping and the degree of multi-programming
-**Short term:** decide which process to run next. Manages the ready queue. Invoked very frequently, hence must be fast. Usually called in response to clock interrupts, I/O interrupts, or blocking system calls.
+- **Long term:** applies to new processes and controls the degree of multiprogramming by deciding which processes to admit to the system when A good mix of CPU and I/O bound processes is favourable to keep all resources as busy as possible. Usually absent in popular modern OS<br>
+- **Medium term:** controls swapping and the degree of multi-programming.<br>
+- **Short term:** decide which process to run next. Manages the ready queue. Invoked very frequently, hence must be fast. Usually called in response to clock interrupts, I/O interrupts, or blocking system calls.
 
 #### Classification by Approach
-**Non-preemptive:** processes are only interrupted voluntarily (e.g., I/O operation or “nice” system call – yield()), Windows 3.1 and DOS were non-preemtive
-**Preemptive:** processes can be interrupted forcefully or voluntarily. This requires context switches which generate overhead, too many of them should be avoided (recall last lecture). Prevents processes from monopolising the CPU. Most popular modern operating systems are preemptive
+- **Non-preemptive:** processes are only interrupted voluntarily (e.g., I/O operation or “nice” system call – yield()), Windows 3.1 and DOS were non-preemtive<br>
+- **Preemptive:** processes can be interrupted forcefully or voluntarily. This requires context switches which generate overhead, too many of them should be avoided (recall last lecture). Prevents processes from monopolising the CPU. Most popular modern operating systems are preemptive
+
+### Performance Assessment Criteria
+User oriented criteria:
+- Response time: minimise the time between creating the job and its first execution
+- Turnaround time: minimise the time between creating the job and finishing it
+- Predictability: minimise the variance in processing times
+
+System oriented criteria:
+- Throughput: maximise the number of jobs processed per hour
+- Fairness: Are processing power/waiting time equally distributed? Are some processes kept waiting excessively long (starvation)
+
+## Scheduling Algorithms
