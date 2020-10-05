@@ -105,16 +105,25 @@ System oriented criteria:
 - Concept: a non-preemtive algorithm that operates as a strict queueing mechanism and schedules the processes in the same order that they were added to the queue
 - Advantages: positional fairness and easy to implement
 - Disadvantages: Favours long processes over short ones (think of the supermarket checkout!). Could compromise resource utilisation, i.e., CPU vs. I/O devices
-![img]()
+
+![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/FCFS.png)
+
 
 #### Shortest Job First
 - Concept: A non-preemtive algorithm that starts processes in order of ascending processing time using a provided/known estimate of the processing
 - Advantages: always result in the optimal turnaround time
 - Disadvantages: Starvation might occur. Fairness and predictability are compromised. Processing times have to be known beforehand
 
+![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/SJF.png)
+
 #### Round Robin
 - Concept: a preemptive version of FCFS that forces context switches at periodic intervals or time slices. Processes run in the order that they were added to the queue. Processes are forcefully interrupted by the timer
 - Advantages: Improved response time. Effective for general purpose interactive/time sharing systems
-- Disadvantages: Increased context switching and thus overhead. Favours CPU bound processes (which usually run long) over I/O processes (which do not run long). Can be prevented by working with multiple queues? Can reduce to FCFS.
+- Disadvantages: Increased context switching and thus overhead. Favours CPU bound processes (which usually run long) over I/O processes (which do not run long).  Can reduce to FCFS.
+![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/RR.png)
 
-#### 
+#### Priority Queues
+- Concept: A preemptive algorithm that schedules processes by priority (high → low). A round robin is used within the same priority levels. The process priority is saved in the process control block
+- Advantages: can prioritise I/O bound jobs
+- Disadvantages: low priority processes may suffer from starvation (when priorities are static)
+![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/PQ.png)
