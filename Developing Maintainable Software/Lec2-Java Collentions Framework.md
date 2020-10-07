@@ -21,3 +21,19 @@
 - Defines mapping between keys and objects (two collections)
 ### Iterable
 - Collections are able to return an iterator object that can scan over the contents of a collection one object at a time
+
+###  Core collection framework interfaces
+- Iterable: Represents an iterator object
+- Collection: Represents a group of objects (elements)
+- Map: Maps keys to values; no duplicate keys
+- Queue: Represents FIFO queues or LIFO stacks
+- Deque: Represents a double ended queue
+- Set: A collection that cannot contain duplicate elements
+- List: An ordered sequence of elements that allows duplicate elements
+### Interface location
+- Most interfaces can be found in the java.util.* package
+- The "Iterable" interface resides in the java.lang.* package
+
+### Aggregation and composition
+- Aggregation: A uses B
+- Composition: A owns B
