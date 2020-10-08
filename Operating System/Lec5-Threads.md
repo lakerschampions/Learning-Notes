@@ -28,7 +28,7 @@ Processes will often contain multiple blocking tasks
 Such activities should be carried out in parallel/concurrently<br>
 Application examples: webservers, make program, spreadsheets, word processors, processing large data volumes
 
-## User Threads
+## User Threads(Many-to-One)
 Thread management (creating, destroying, scheduling, thread control block manipulation) is carried out in **user space** with the help of a user
 library.<br>
 The process maintains a thread table managed by the runtime system without the kernel’s knowledge
@@ -45,7 +45,7 @@ The process maintains a thread table managed by the runtime system without the k
 - Page faults result in blocking the process
 
 
-## Kernel Threads
+## Kernel Threads(one to one)
 The kernel manages the threads, user application accesses threading facilities through API and system calls<br>
 - Thread table is in the kernel, containing thread control blocks (subset of process control blocks)
 - If a thread blocks, the kernel chooses thread from same or different process (↔ user threads)
@@ -57,7 +57,7 @@ Advantages:
 Frequent mode switches take place, resulting in lower performance<br>
 Windows and Linux apply this approach
 
-## Hybrid Implementations
+## Hybrid Implementations(many to many)
 User threads are multiplexed onto kernel threads<br>
 Kernel sees and schedules the kernel threads (a limited number)<br>
 User application sees user threads and creates/schedules these (an “unrestricted” number)
