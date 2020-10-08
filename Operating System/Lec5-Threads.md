@@ -1,3 +1,4 @@
+## Threads
 A process consists of two fundamental units
 - Resources: all related resources are grouped together
 - Execution trace, i.e., an entity that gets executed
