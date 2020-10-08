@@ -6,8 +6,12 @@ A process consists of two fundamental units
 A process can share its resources between multiple execution traces.
 
 Every thread has its own execution context (e.g. program counter, stack, registers)<br>
-All threads have access to the process’ shared resources. E.g. files, one thread opens a file, all threads of the same process can access the file Global variables, memory, etc. (⇒ synchronisation!)<br>
+All threads have access to the process’ shared resources.
+- E.g. files, one thread opens a file, all threads of the same process can access the file 
+- Global variables, memory, etc. (⇒ synchronisation!)<br>
+
 Similar to processes, threads have: States and transitions (new, running, blocked, ready, terminated), A thread control block
+![img](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/shareresource.png)
 
 Threads incur less overhead to create/terminate/switch (address space remains the same for threads of the same process)
 Some CPUs (hyperthreaded ones) have direct hardware support for multi-threading.
