@@ -65,3 +65,6 @@ Kernel sees and schedules the kernel threads (a limited number)<br>
 User application sees user threads and creates/schedules these (an “unrestricted” number)
 
 ![img](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/comparision.png)
+
+## POSIX Thread
+https://www.cnblogs.com/sunminmin/p/4479952.html
