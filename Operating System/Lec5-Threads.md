@@ -1,0 +1,27 @@
+A process consists of two fundamental units
+- Resources: all related resources are grouped together
+- Execution trace, i.e., an entity that gets executed
+
+A process can share its resources between multiple execution traces.
+
+Every thread has its own execution context (e.g. program counter, stack, registers)<br>
+All threads have access to the process’ shared resources. E.g. files, one thread opens a file, all threads of the same process can access the file Global variables, memory, etc. (⇒ synchronisation!)<br>
+Similar to processes, threads have: States and transitions (new, running, blocked, ready, terminated), A thread control block
+
+Threads incur less overhead to create/terminate/switch (address space remains the same for threads of the same process)
+Some CPUs (hyperthreaded ones) have direct hardware support for multi-threading.
+
+Inter-thread communication is easier/faster than interprocess communication (threads share memory by default)<br>
+No protection boundaries are required in the address space (threads are cooperating, belong to the same user, and have a common goal) <br>
+Synchronisation has to be considered carefully!
+
+Multiple related activities apply to the same resources, these resources should be accessible/shared
+Processes will often contain multiple blocking tasks
+- I/O operations (thread blocks, interrupt marks completion)
+- Memory access: pages faults are result in blocking
+Such activities should be carried out in parallel/concurrently<br>
+Application examples: webservers, make program, spreadsheets, word processors, processing large data volumes
+
+Thread management (creating, destroying, scheduling, thread control block manipulation) is carried out in **user space** with the help of a user
+library.<br>
+The process maintains a thread table managed by the runtime system without the kernel’s knowledge
