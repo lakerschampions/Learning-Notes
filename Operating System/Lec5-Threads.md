@@ -13,7 +13,7 @@ All threads have access to the process’ shared resources.
 Similar to processes, threads have: States and transitions (new, running, blocked, ready, terminated), A thread control block
 ![img](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/shareresource.png)
 
-Threads incur less overhead to create/terminate/switch (address space remains the same for threads of the same process)
+Threads incur **less overhead** to create/terminate/switch (address space remains the same for threads of the same process)
 Some CPUs (hyperthreaded ones) have direct hardware support for multi-threading.
 
 Inter-thread communication is easier/faster than interprocess communication (threads share memory by default)<br>
@@ -23,7 +23,8 @@ Synchronisation has to be considered carefully!
 Multiple related activities apply to the same resources, these resources should be accessible/shared
 Processes will often contain multiple blocking tasks
 - I/O operations (thread blocks, interrupt marks completion)
-- Memory access: pages faults are result in blocking
+- Memory access: **pages faults** are result in blocking
+
 Such activities should be carried out in parallel/concurrently<br>
 Application examples: webservers, make program, spreadsheets, word processors, processing large data volumes
 
