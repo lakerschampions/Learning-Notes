@@ -122,8 +122,11 @@ System oriented criteria:
 - Disadvantages: Increased context switching and thus overhead. Favours CPU bound processes (which usually run long) over I/O processes (which do not run long).  Can reduce to FCFS.
 ![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/RR.png)
 
+
+
 #### Priority Queues
 - Concept: A preemptive algorithm that schedules processes by priority (high → low). A round robin is used within the same priority levels. The process priority is saved in the process control block
 - Advantages: can prioritise I/O bound jobs
 - Disadvantages: low priority processes may suffer from starvation (when priorities are static)
 ![image](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/PQ.png)
+
