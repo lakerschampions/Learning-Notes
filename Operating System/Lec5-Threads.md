@@ -56,3 +56,4 @@ User threads are multiplexed onto kernel threads<br>
 Kernel sees and schedules the kernel threads (a limited number)<br>
 User application sees user threads and creates/schedules these (an “unrestricted” number)
 
+![img](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/comparision.png)
