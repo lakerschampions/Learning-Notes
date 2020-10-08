@@ -22,6 +22,37 @@ Processes will often contain multiple blocking tasks
 Such activities should be carried out in parallel/concurrently<br>
 Application examples: webservers, make program, spreadsheets, word processors, processing large data volumes
 
+## User Threads
 Thread management (creating, destroying, scheduling, thread control block manipulation) is carried out in **user space** with the help of a user
 library.<br>
 The process maintains a thread table managed by the runtime system without the kernel’s knowledge
+
+### Advantages:
+- Threads are in user space (i.e., no mode switches required)
+- Full control over the thread scheduler
+- OS independent (threads can run on OS that do not support them)
+
+### Disadvantages:
+- Blocking system calls suspend the entire process (user threads are mapped onto a single process, managed by the kernel)
+- No true parallelism (a process is scheduled on a single CPU)
+- Clock interrupts are non-existent (i.e. user threads are non-preemptive)
+- Page faults result in blocking the process
+
+
+## Kernel Threads
+The kernel manages the threads, user application accesses threading facilities through API and system calls<br>
+- Thread table is in the kernel, containing thread control blocks (subset of process control blocks)
+- If a thread blocks, the kernel chooses thread from same or different process (↔ user threads)
+
+Advantages:
+- True parallelism can be achieved
+- No run-time system needed
+
+Frequent mode switches take place, resulting in lower performance<br>
+Windows and Linux apply this approach
+
+## Hybrid Implementations
+User threads are multiplexed onto kernel threads<br>
+Kernel sees and schedules the kernel threads (a limited number)<br>
+User application sees user threads and creates/schedules these (an “unrestricted” number)
+
