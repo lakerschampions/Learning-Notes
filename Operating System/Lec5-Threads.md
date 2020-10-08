@@ -50,11 +50,13 @@ The kernel manages the threads, user application accesses threading facilities t
 - Thread table is in the kernel, containing thread control blocks (subset of process control blocks)
 - If a thread blocks, the kernel chooses thread from same or different process (↔ user threads)
 
-Advantages:
+### Advantages:
 - True parallelism can be achieved
 - No run-time system needed
 
-Frequent mode switches take place, resulting in lower performance<br>
+### Disvantages:
+- Frequent mode switches take place, resulting in lower performance
+  
 Windows and Linux apply this approach
 
 ## Hybrid Implementations(many to many)
