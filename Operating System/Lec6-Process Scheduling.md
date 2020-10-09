@@ -86,4 +86,5 @@ Approach:
  - N threads are allocated to N dedicated CPUs
  - N threads are kept waiting until N CPUs are available
  - Non-preemptive, i.e. blocking calls result in idle CPUs (less context switching overhead but results in CPU idle time)
+ 
 The number N can be dynamically adjusted to match processor capacity
