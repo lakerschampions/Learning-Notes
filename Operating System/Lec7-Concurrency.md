@@ -12,6 +12,20 @@ A counter is maintained to count the number of items currently in thebuffer
   
 Similar concurrency problems as with the calculation of sums happen in the bounded buffer (producer/consumer) problem
 
+### Critical Sections, Mutual Exclusion
+- A critical section is a set of instructions in which shared resources between processes/threads (e.g. variables) are changed
+- Mutual exclusion must be enforced for critical sections
+  - Only one process at a time should be in the critical section (mutual exclusion)
+  - Processes have to get “permission” before entering their critical section (e.g. request a lock, hold the lock, release the lock)
+
+- Any solution to the critical section problem must satisfy the following requirements:
+  - Mutual exclusion: only one process can be in its critical section at any one point in time
+  - Progress: any process must be able to enter its critical section at some point in time
+    - Processes/threads in the “remaining code” do not influence access to critical sections
+  - Fairness/bounded waiting: fairly distributed waiting times/processes cannot be made to wait indefinitely
+  
+- These requirements have to be satisfied, independent of the order in which sequences are executed
+
 ### Deadlocks
 - Each deadlocked process/thread is waiting for a resource held by an other deadlocked process/thread (which cannot run and hence cannot release the resources)
 - This can happen between any number of processes/threads and for any number of resources
@@ -21,3 +35,5 @@ Similar concurrency problems as with the calculation of sums happen in the bound
 - Hold and wait condition: a resource can be held whilst requesting new resources
 - No preemption: resources cannot be forcefully taken away from a process
 - Circular wait: there is a circular chain of two or more processes, waiting for a resource held by the other processes
+
+
