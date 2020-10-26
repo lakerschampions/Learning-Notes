@@ -1,10 +1,33 @@
-### Counter
+## Counter
 counter++ consists of three separate actions:
-- read the value of counter from memory and store it in a register
-- add one to the value in the register
-- store the value of the register in counter in memory
+- *read* the value of counter from memory and store it in a register
+- *add* one to the value in the register
+- *store* the value of the register in counter in memory
 
-### Bound Buffers
+These actions can be interrupted by context switch, they are not atomic.
+example:
+```
+#include <stdio.h>
+#include <pthread.h>
+int counter = 0;
+void * calc(void * number_of_increments) {
+  int i;
+  for(i = 0; i < *((int*) number_of_increments);i++)
+    counter++;
+  }
+int main() {
+  int iterations = 50000000;
+  pthread_t tid1,tid2;
+  pthread_create(&tid1, NULL, calc, (void *) &iterations);
+  pthread_create(&tid2, NULL, calc, (void *) &iterations);
+  pthread_join(tid1,NULL);
+  pthread_join(tid2,NULL);
+  printf("The value of counter is: %d\n", counter);
+}
+```
+<br><br>
+
+## Bound Buffers
 Consider a bounded buffer in which N items can be stored<br>
 A counter is maintained to count the number of items currently in thebuffer
   - Incremented when an item is added
@@ -12,7 +35,7 @@ A counter is maintained to count the number of items currently in thebuffer
   
 Similar concurrency problems as with the calculation of sums happen in the bounded buffer (producer/consumer) problem
 
-### Critical Sections, Mutual Exclusion
+## Critical Sections, Mutual Exclusion
 - A critical section is a set of instructions in which shared resources between processes/threads (e.g. variables) are changed
 - Mutual exclusion must be enforced for critical sections
   - Only one process at a time should be in the critical section (mutual exclusion)
@@ -26,11 +49,11 @@ Similar concurrency problems as with the calculation of sums happen in the bound
   
 - These requirements have to be satisfied, independent of the order in which sequences are executed
 
-### Deadlocks
+## Deadlocks
 - Each deadlocked process/thread is waiting for a resource held by an other deadlocked process/thread (which cannot run and hence cannot release the resources)
 - This can happen between any number of processes/threads and for any number of resources
 
-#### Four conditions must hold for deadlocks to occur 
+### Four conditions must hold for deadlocks to occur 
 - Mutual exclusion: a resource can be assigned to at most one process at a time
 - Hold and wait condition: a resource can be held whilst requesting new resources
 - No preemption: resources cannot be forcefully taken away from a process
