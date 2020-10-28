@@ -59,4 +59,35 @@ Similar concurrency problems as with the calculation of sums happen in the bound
 - No preemption: resources cannot be forcefully taken away from a process
 - Circular wait: there is a circular chain of two or more processes, waiting for a resource held by the other processes
 
+<br><br>
+## Mutual Exclusion
+### Approaches
+- Software based: Peterson’s solution
+- Hardware based: disabling interrupts, test_and_set(), swap_and_compare()
+- OS based: Mutexes, Semaphores
+- Monitors: software construct within the programming languages
 
+### Peterson's Solution
+```
+P0: flag[0] = true;
+    turn = 1;
+    while (flag[1] == true && turn == 1)
+    {
+        // busy wait
+    }
+    // critical section
+    ...
+    // end of critical section
+    flag[0] = false;
+    
+P1: flag[1] = true;
+    turn = 0;
+    while (flag[0] == true && turn == 0)
+    {
+        // busy wait
+    }
+    // critical section
+    ...
+    // end of critical section
+    flag[1] = false;
+```
