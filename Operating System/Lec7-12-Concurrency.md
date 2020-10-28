@@ -91,3 +91,59 @@ P1: flag[1] = true;
     // end of critical section
     flag[1] = false;
 ```
+<br>
+
+### Disabling Interrupts
+- Disable interrupts whilst executing a **critical section** and prevent interruption (i.e., interrupts from timers, I/O devices, etc.)
+- Disabling interrupts “may” be appropriate on a single CPU machine
+- This is insufficient on modern multi-core/multi processor machines
+
+### Atomic Instructions
+- Implement test_and_set() and swap_and_compare() instructions as a set of atomic ( = uninterruptible) instructions
+  - Reading and setting the variable(s) is done as one “complete” set of instructions
+  - If test_and_set() / compare_and_swap() are called simultaneously, they will be executed sequentially
+- They are used in in combination with global lock variables, assumed to be true (1) if the lock is in use
+
+```
+// Test and set method
+boolean test_and_set(boolean * bIsLocked) {
+  boolean rv = *bIsLocked;
+  *bIsLocked = true;
+  return rv;
+}
+// Example of using test and set method
+do {
+  // WHILE the lock is in use, apply busy waiting
+  while (test_and_set(&bIsLocked));
+  // Lock was false, now true
+  // CRITICAL SECTION
+  ...
+  bIsLocked = false;
+  ...
+  // remainder section
+} while (...)
+
+
+// Compare and swap method
+int compare_and_swap(int * iIsLocked, int iExpected, int iNewValue) {
+  int iTemp = *iIsLocked;
+  if(*iIsLocked == iExpected)
+  *iIsLocked = iNewValue;
+  return iTemp;
+}
+// Example using compare and swap method
+do {
+  // While the lock is in use (i.e. == 1), apply busy waiting
+  while (compare_and_swap(&iIsLocked, 0, 1));
+  // Lock was false, now true
+  // CRITICAL SECTION
+  ...
+  iIsLocked = 0;
+  ...
+  // remainder section
+} while (...);
+```
+#### Disadvantages:
+- test_and_set() and compare_and_swap() are hardware instructions and (usually) not directly accessible to the user
+- Busy waiting is used
+- Deadlock is possible, e.g. when two locks are requested in opposite orders in different threads
