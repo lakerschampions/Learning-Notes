@@ -147,3 +147,33 @@ do {
 - test_and_set() and compare_and_swap() are hardware instructions and (usually) not directly accessible to the user
 - Busy waiting is used
 - Deadlock is possible, e.g. when two locks are requested in opposite orders in different threads
+
+
+<br><br>
+### Mutex Locks
+- Mutexes are an approach for mutual exclusion provided by the operating system containing a boolean lock variable to indicate availability. The lock variable is set to true if the lock is available (process/thread can enter **critical section**), false if not.
+- Two **atomic functions** are used to manipulate the mutex:
+  - *acquire()*: called before entering a critical section, boolean set to false
+  - *release()*: called after exiting the critical section, boolean set to true again
+
+#### Disadvantage
+- *acquire()* result in busy waiting
+- Detrimental for performance on single CPU systems
+
+#### Advantage
+- Context switches can be avoided (short critical sections)
+- Efficient on multi-core/multi-processor systems when locks are held for a short time only
+
+<br><br>
+
+### Semaphores
+- Semaphores are an approach for mutual exclusion (and process synchronisation) provided by the operating system. They contain an integer variable. We distinguish between binary (≤ 1) and counting semaphores (≤ +∞).
+- Two atomic functions are used to manipulate semaphores (think of the counter++ example)
+  - *wait()* is called when a resource is acquired, the counter is decremented
+  - *signal()/post()* is called when a resource is released
+- Strictly positive values indicate that the semaphore is available, negative values indicate the number of processes/threads waiting
+- The negative value of a semaphore is the number of processes waiting for the resource
+- Semaphores within the same process can be declared as global variables of the type sem_t
+  - *sem_init()* initialises the value of the semaphore
+  - *sem_wait()* decrements the value of the semaphore
+  - *sem_post()* increments the values of the semaphore
