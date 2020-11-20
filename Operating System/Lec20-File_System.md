@@ -58,4 +58,5 @@ Disks are usually divided into multiple partitions
 - An in-memory directory cache of recently accessed directory information
 - A system-wide open file table, containing a copy of the FCB for every currently open file in the system, including location on disk, file size, and “open count’ (#processes that use the file)
 - A per-process open file table, containing a pointer to the system open file table
+
 ![img](https://raw.githubusercontent.com/lakerschampions/Notes_in_School/master/Operating%20System/img/file_table.png)
